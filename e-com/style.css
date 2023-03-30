@@ -1,0 +1,276 @@
+
+
+body{
+ font-family: 'Times New Roman', Times, serif;
+}
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+h3{
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+h4{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1d1d1d;
+}
+h6{
+    color: #D8D8D8;
+}
+.navbar{
+    font-size: 20px;
+}
+.navbar-light .navbar-nav .nav-link{
+    padding: 0 20px;
+    color: #1d1d1d;
+    transition: 0.3s ease-in-out;
+}
+.navbar-nav .nav-link:hover{
+    color: coral !important;
+    transition: 0.3s ease-in-out;
+}
+.navbar i {
+    font-size:1.2rem;
+    padding: 0 7px;
+    cursor: pointer;
+    font-weight: 800;
+    transition: 0.3s ease;
+}
+.navbar i:hover{
+  color: coral;
+}
+#home{
+    background-image: url(./img/back.jpg);
+    width: 100%;
+    height: 90vh;
+    background-position: top center ;
+    background-size: cover;
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+#new .one img{
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+#new  .one .details {
+    position:relative;
+    bottom: 450px;
+}
+#new  .shop{
+background: none;
+border: none;
+transform: translateY(20px);
+font-size: 15px;
+font-weight: 800;
+transition: 0.3s ease;
+}
+#new .shop:hover{
+border-bottom: 4px solid green;
+transform: translateY(60px);
+transition: 3s ease;
+display: block;
+}
+hr{
+    width: 45px;
+    height: 5px;
+    background-color:orangered;
+  
+}
+
+/* product */
+.product{
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+.product img{
+    transition: 0.3s all;
+}
+.product:hover img{
+    opacity: 0.7;
+}
+.buy-now{
+    width: 140px;
+    height: 40px;
+    left: 20px;
+    background-color: orangered;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 0.3s all;
+    border: none;
+    color: aliceblue;
+}
+.product:hover .buy-now{
+    width: 140px;
+    height: 40px;
+    left: 20px;
+    transform: translateY(0);
+    opacity: 1;
+
+    
+}
+
+#banner1{
+    background-image: url(./img/banner/2.jpg);
+    width: 100%;
+    height: 60vh;
+    background-position: top 70px center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+    flex-direction: column; 
+}
+#banner1 .shop-now1{
+    background-color: orangered;
+    border: none;
+    width: 140px;
+    height: 40px;
+}
+#banner1 .shop-now1:hover{
+    opacity: 0.7;
+}
+/* product  */
+#pagination{
+    position: absolute;
+    left: 40%;
+}
+#pagination ul li a:hover{
+    background-color:black;
+    opacity: 0.7;
+    color: white;
+    transition: 0.7s;
+}
+/* sproduct  */
+.smail-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+.smail-img-col{
+    flex-basis: 24%;
+}
+select{
+   display: block;
+   padding: 5px 10px;
+}
+.sproduct input{
+    width: 50px;
+    height: 50px;
+    padding-left: 10px;
+    margin-right: 10px;
+    font-size: 17px;
+}
+/* blog */
+
+
+
+@media (max-width:700px){
+    #new  button{
+        background: none;
+        border: none;
+        border-bottom: 2px solid black;
+        font-size: 15px;
+        font-weight: 500;
+        transform: translateY(10px);
+        transition: 0.3s ease;
+        margin-top: 100px;
+        }
+        #home {
+            background-image: url(./img/back.jpg);
+            width: 100%;
+            height: 35vh;
+            background-position: top center;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+        #cart table {
+            width: 210%;
+            border-collapse: collapse;
+            table-layout: fixed;
+            white-space: nowrap;
+        }
+        #cart{
+            overflow-x:auto;
+        }
+        .videoplyer{
+            width: 270px !important;
+          border-radius: 12px;
+          margin-right: 12px;
+        }
+        .foremItem input{
+            width: 330px !important;
+            height: 50px !important;
+            border-radius: 12px;
+        }
+        .foremItem textarea{
+            width: 330px !important;
+            height: 200px;
+        }
+        iframe{
+            width: 330px !important;
+            height: 400px;
+        }
+}
+
+/* cart page  */
+
+.about-header{
+    background-image: url(./img/banner/parallax.jpg);
+    width: 100%;
+    height: 35vh;
+    background-position: top center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+#cart table thead{
+    background-color: tomato;
+    color: white;
+}
+#cart table tr input{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+#cart table tr td {
+    border: 1px solid black;
+}
+.videoplyer{
+    width: 800px;
+   position: relative;
+   left: 20%;
+  border-radius: 12px;
+}
+iframe{
+    width: 500px;
+    height: 400px;
+} 
+.foremItem input{
+    width: 500px;
+    height: 50px;
+    border-radius: 12px;
+}
+.foremItem textarea{
+    width: 500px;
+    height: 200px;
+}
